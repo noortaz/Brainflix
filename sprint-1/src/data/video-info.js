@@ -46,13 +46,13 @@ const mainVideo = {
 }
 
 
-const sideVideo = [{
+const sideVideo = [/*{
     id: 0,
     title: 'BMX Rampage: 2018 Highlights',
     channel: 'Red Cow',
     image: video0
 
-},
+},*/
 {
     id: 1,
     title: 'Become A Travel Pro In One Easy Lesson…',

@@ -17,9 +17,11 @@ class App extends React.Component {
       <>
         <Header />
         <Hero />
-        <MainArticle mainVideo = {mainVideo}/>
-        <Form />
-        <Comments mainVideo = {mainVideo}/>
+        <div className="aside-design">
+          <MainArticle mainVideo={mainVideo} />
+          <Form />
+          <Comments mainVideo={mainVideo} />
+        </div>
         <VideoList mainVideo={mainVideo} sideVideo = {sideVideo}/>
       </>
     );

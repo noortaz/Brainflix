@@ -1,7 +1,18 @@
-* {
-    margin: 0;
+@font-face {
+    font-family: 'Avenir';
+    src: url("./fonts/AvenirNextProLT/Linotype\ -\ AvenirNextLTPro-Regular.otf") format("opentype");
 }
 
+@font-face {
+    font-family: 'AvenirBold';
+    src: url("./fonts/AvenirNextProLT/Linotype\ -\ AvenirNextLTPro-Bold.otf") format("opentype");
+}
+
+
+* {
+    margin: 0;
+    font-family: 'Avenir';
+}
 
 .nav-bar {
 
@@ -14,12 +25,13 @@
         align-items: center;
         margin: 1rem;
 
-        &__items {
+        &__items:nth-child(1) {
             margin-bottom: 0.5rem;
         }
         
         &__items:nth-child(2) {
             width: 100%;
+            margin-bottom: 0.5rem;
         }
 
         &__items:nth-child(3) {
@@ -51,13 +63,14 @@
 
     &__upload-btn {
         height: 3rem;
-        width: 78%;
+        width: 79%;
         border-radius: 4px;
         border: 2px solid #0095ff;
         outline: none;
         background-color: #0095ff;
         color: white;
         text-transform: uppercase;
+        font-weight: bold;
     }
 
 
@@ -91,4 +104,52 @@
             object-fit: cover;
         }
     }
+}
+
+
+.article {
+    margin: 1rem;
+}
+
+.videos {
+    margin: 1rem;
+
+    &--next {
+        text-transform: uppercase;
+        color: silver;
+        padding: 2.5rem 0;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: row;
+
+        &__sample-image {
+            width: 8rem;
+            height: 5rem;
+            object-fit: cover;
+            border-radius: 4px;
+            margin: 0 1rem 1rem 0;
+        
+        }
+
+        &--description {
+            height: 5rem;
+
+            &__title {
+                font-weight: bold;
+                margin: 0 0 1rem 0;
+                font-size: 0.9rem;
+            }
+
+            &__channel {
+                font-size: 0.9rem;
+                
+            }
+        }
+    }
+
+    
+
+    
 }

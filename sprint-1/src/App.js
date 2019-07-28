@@ -5,6 +5,7 @@ import Hero from './components/Hero.js';
 import MainArticle from './components/MainArticle.js';
 import VideoList from './components/VideoList.js';
 import {sideVideo} from './data/video-info';
+import {mainVideo} from './data/video-info';
 
 class App extends React.Component {
 
@@ -14,7 +15,7 @@ class App extends React.Component {
       <>
         <Header />
         <Hero />
-        <MainArticle />
+        <MainArticle mainVideo = {mainVideo}/>
         <VideoList sideVideo = {sideVideo}/>
       </>
     );

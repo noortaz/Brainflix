@@ -25,13 +25,35 @@
         align-items: center;
         margin: 1rem;
 
+        @media screen and (min-width: 426px) {
+            flex-direction: row;
+            margin: 1rem 1.5rem 1rem 1.5rem;
+        }
+
+        @media screen and (min-width: 1025px) {
+            margin: 1rem 11.3rem 1rem 11.3rem;
+        }
+
         &__items:nth-child(1) {
             margin-bottom: 0.5rem;
+
+            @media screen and (min-width: 426px) {
+                margin-bottom: 0;
+            }
         }
         
         &__items:nth-child(2) {
             width: 100%;
             margin-bottom: 0.5rem;
+
+            @media screen and (min-width: 426px) {
+                margin: 0 1.5rem 0 10rem;
+                width: 40%;
+            }
+
+            @media screen and (min-width: 1025px) {
+                margin: 0 1.5rem 0 32rem;
+            }
         }
 
         &__items:nth-child(3) {
@@ -39,15 +61,25 @@
             flex-direction: row;
             justify-content: space-between;
             width: 100%;
+
+            @media screen and (min-width: 426px) {
+                justify-content: flex-end;
+                width: 35%;
+            }
+
+            @media screen and (min-width: 1025px) {
+                width: 30%;
+            }
         }
     }
 
     &__search-box {
         width: 98%;
-        height: 3rem;
+        height: 2.9rem;
         border-radius: 4px;
         border: 2px solid #efefef;
         outline: none;
+
     }
 
     &__search-box::placeholder {
@@ -58,6 +90,22 @@
         position: absolute;
         top: 4.5rem;
         left: 2rem;
+
+        @media screen and (min-width: 426px) {
+            top: 2.2rem;
+            left: 20rem;
+        }
+
+        @media screen and (min-width: 1025px) {
+            left: 52rem;
+        }
+
+    }
+
+    &__icon--upload {
+       
+        margin-right: 0.5rem;
+        
     }
 
 
@@ -71,6 +119,12 @@
         color: white;
         text-transform: uppercase;
         font-weight: bold;
+        
+
+        @media screen and (min-width: 426px) {
+           margin-right: 1.5rem;
+        }
+
     }
 
 

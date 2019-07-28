@@ -3,6 +3,8 @@ import './styles.scss';
 import Header from './components/Header.js';
 import Hero from './components/Hero.js';
 import MainArticle from './components/MainArticle.js';
+import Form from './components/Form';
+import Comments from './components/Comments';
 import VideoList from './components/VideoList.js';
 import {sideVideo} from './data/video-info';
 import {mainVideo} from './data/video-info';
@@ -16,7 +18,9 @@ class App extends React.Component {
         <Header />
         <Hero />
         <MainArticle mainVideo = {mainVideo}/>
-        <VideoList sideVideo = {sideVideo}/>
+        <Form />
+        <Comments mainVideo = {mainVideo}/>
+        <VideoList mainVideo={mainVideo} sideVideo = {sideVideo}/>
       </>
     );
   }

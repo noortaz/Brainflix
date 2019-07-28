@@ -4,8 +4,9 @@ import React from 'react';
   class VideoList extends React.Component {
   render() {
     return (
-      <section className="videos">
+      <aside className="videos">
         <h4 className="videos--next">next video</h4>
+        
         {this.props.sideVideo.map((item) => {
           return (
             <div key={item.id} className="videos__list">
@@ -16,8 +17,8 @@ import React from 'react';
               </div>
             </div>
           )
-        })}
-      </section>
+        })} 
+      </aside>
     );
 
     }

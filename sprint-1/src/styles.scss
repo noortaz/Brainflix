@@ -15,8 +15,6 @@
 }
 
 .nav-bar {
-
-
     &__list {
         list-style-type: none;
         padding-left: 0;
@@ -103,7 +101,6 @@
     }
 
     &__icon--upload {
-       
         margin-right: 0.5rem;
         
     }
@@ -143,22 +140,50 @@
     background-color: black;
 
     &__image {
-        
-
         filter: grayscale(0.5);
         width: 100%;
         height: 11.5rem;
         object-fit: cover;
         
+        
 
         @media screen and (min-width: 426px) {
             height: 25rem;
             object-fit: cover;
+            margin: 0 2rem;
+            width: 92%;
         }
 
         @media screen and (min-width: 1025px) {
             height: 41.9rem;
             object-fit: cover;
+            margin: 0 13rem;
+            width: 71%;
+        }
+    }
+
+    &__icons > img {
+        background-color: rgba(0, 0, 0, 0.452);
+        
+        position: absolute;
+        top: 20rem;
+        padding: 0.5rem;
+        border-radius: 4px; 
+    }
+
+    &__icons {
+
+        &--play {
+            height: 1rem;
+        }
+        
+        &--fullscreen {
+            left: 14rem;
+            height: 1rem
+        }
+        &--volume {
+            left: 16rem;
+            height: 1rem;
         }
     }
 }
@@ -188,7 +213,7 @@
         @media screen and (min-width: 426px) {
             display: flex;
             justify-content: space-between;
-            border-bottom: 1px solid silver;
+            border-bottom: 2px solid silver;
             
         }
     }
@@ -255,7 +280,7 @@
 
     @media screen and (min-width: 1025px) {
         float: right;
-        width: 23%;
+        width: 21%;
         margin-right: 11rem;
         height: 57rem;
         display: flex;
@@ -313,6 +338,7 @@
     @media screen and (min-width: 1025px) {
         //margin: 2rem 11.3rem 1rem 11.3rem;
         margin-left: 0;
+        margin-right: 0;
     
     }
 
@@ -568,7 +594,7 @@
 .aside-design {
     @media screen and (min-width: 1025px) {
         float: left;
-        width: 51%;
+        width: 50%;
         margin-top: 2.2rem;
         margin-left: 11rem;
         

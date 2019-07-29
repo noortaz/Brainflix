@@ -11,6 +11,10 @@ import {mainVideo} from './data/video-info';
 
 class App extends React.Component {
 
+  state = {
+    timestamp: 0
+  }
+
   render() {
 
     return (

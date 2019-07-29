@@ -3,10 +3,11 @@ import React from 'react';
 
 
 class Comments extends React.Component {
+  
   render() {
     return (
       <section className="comments">
-        {this.props.mainVideo.comment.map((item, index) => {
+        {this.props.mainVideo.comment.map((item) => {
           return (
             <div key={item.id} className="comments__box">
               <div className="comments__box__image"><img className="comments__box__image" src="" alt="" /></div>

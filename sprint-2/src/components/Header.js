@@ -15,7 +15,7 @@ class Header extends React.Component {
           <ul className="nav-bar__list">
             <li className="nav-bar__list__items">
 
-              <Link to="/"><img className="nav-bar__logo" src={headerLogo} alt="" /></Link>
+              <Link to="/videos/1af0jruup5gu"><img className="nav-bar__logo" src={headerLogo} alt="" /></Link>
 
             </li>
             <li className="nav-bar__list__items">

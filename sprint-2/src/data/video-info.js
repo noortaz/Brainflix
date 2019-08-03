@@ -124,5 +124,5 @@ const sideVideo = [{
 }];
 
 
-//export {sideVideo};
+export {sideVideo};
 export {mainVideo};

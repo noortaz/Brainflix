@@ -1,5 +1,4 @@
 import React from 'react';
-import Header from './Header';
 import video0 from '../images/video-list-0.jpg';
 import {Link} from 'react-router-dom';
 
@@ -10,7 +9,6 @@ class Upload extends React.Component {
   render() {
     return (
         <>
-          <Header />
           <form action="" className="form">
             <h2 className="form__heading">Upload video</h2>
             <div className="form__container">

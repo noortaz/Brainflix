@@ -3,7 +3,7 @@ import React from 'react';
 //import volumeIcon from '../icons/SVG/Icon-volume.svg';
 //import fullScreen from '../icons/SVG/Icon-fullscreen.svg';
 //import scrubberIcon from '../icons/SVG/Icon-scrubber-control.svg';
-import heroImage from '../images/video-list-0.jpg';
+//import heroImage from '../images/video-list-0.jpg';
 
 
 
@@ -11,7 +11,7 @@ class Hero extends React.Component {
   render() {
     return (
       <section className="hero-container">
-        <video className="hero-container__image" poster={heroImage} controls></video>
+        <video className="hero-container__image" poster={this.props.mainVideo.image} controls></video>
       </section>
       /*
       <div className="hero-container__icons">

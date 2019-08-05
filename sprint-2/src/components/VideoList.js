@@ -8,7 +8,6 @@ import {Link} from 'react-router-dom';
     const filterID = this.props.mainVideo.id;
     const vidList = this.props.sideVideo;
     const shortList = vidList.filter((nowPlaying) => nowPlaying.id !== filterID);
-    
     return (
       <aside className="videos">
         <h4 className="videos--next">next video</h4>

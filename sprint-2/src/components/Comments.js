@@ -5,6 +5,7 @@ import React from 'react';
 class Comments extends React.Component {
   
   render() {
+    const accessTime = this.props.accessTime;
     return (
       <section className="comments">
         {this.props.mainVideo.comments.map((item) => {
@@ -13,7 +14,7 @@ class Comments extends React.Component {
               <div className="comments__box__image"><img className="comments__box__image" src="" alt="" /></div>
               <div className="comments__box__content">
                 <div className="comments__box__name">{item.name}</div>
-                <div className="comments__box__date">{item.timestamp}</div>
+                <div className="comments__box__date">{accessTime(item.timestamp)}</div>
               </div>
               <div className="comments__box__message">{item.comment}</div>
             </div>

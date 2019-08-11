@@ -29,9 +29,9 @@ class App extends React.Component {
 
 
   getVideoList() {
-    Axios.get('https://project-2-api.herokuapp.com/videos?api_key=997fdb70-0e59-42e6-84d5-d4de9ea0f253')
+    Axios.get('http://localhost:5000/videos')
     .then(response => {
-      console.log(response);
+      //console.log(response);
       
       this.setState({
         sideVideo: response.data,
@@ -42,9 +42,9 @@ class App extends React.Component {
   }
 
   getMainVideo(id) {
-    Axios.get(`https://project-2-api.herokuapp.com/videos/${id}?api_key=997fdb70-0e59-42e6-84d5-d4de9ea0f253`)
+    Axios.get(`http://localhost:5000/videos/${id}`)
     .then(response => {
-      console.log(response.data);
+      //console.log(response.data);
       this.setState({
         mainVideo: response.data
       })

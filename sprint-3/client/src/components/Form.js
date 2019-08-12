@@ -5,7 +5,7 @@ import avatar from '../images/avatar.jpg'
 class Form extends React.Component {
   render() {
     return (
-      <form action="" className="form" >
+      <form action="" className="form" onSubmit={this.props.submitComment}>
         <h2 className="form__heading">3 comments</h2>
         <div className="form__container">
           <img className="form__content__image" src={avatar} alt=""/>

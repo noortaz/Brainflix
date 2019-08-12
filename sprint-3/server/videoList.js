@@ -31,5 +31,16 @@ router.post('/', (req, res) => {
     res.json(newVideo);
 })
 
+/*router.post(`/:videoId/comments`, (req, res) => {
+    const selectedVideo = mainVideoData.filter((item) =>
+        item.id == req.params.videoId
+    )
+    const newComment = req.body;
+    videoData.push((videoData.map((item) => item.comments.push(newComment)))[0]);
+    // videoData.comments.push(newComment);
+    // mainVideoData.comments.push(newComment);
+    res.status(201).json(selectedVideo[0].comments)
+})*/
+
 
 module.exports = router;

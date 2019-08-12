@@ -4,6 +4,7 @@ import React from 'react';
 //import fullScreen from '../icons/SVG/Icon-fullscreen.svg';
 //import scrubberIcon from '../icons/SVG/Icon-scrubber-control.svg';
 //import heroImage from '../images/video-list-0.jpg';
+import brainVideo from '../assets/video/brain-video.mp4'
 
 
 
@@ -11,7 +12,10 @@ class Hero extends React.Component {
   render() {
     return (
       <section className="hero-container">
-        <video className="hero-container__image" poster={this.props.mainVideo.image} controls></video>
+        <video className="hero-container__image" poster={this.props.mainVideo.image} controls>
+          <source src={brainVideo}
+            type="video/mp4"></source>
+        </video>
       </section>
       /*
       <div className="hero-container__icons">

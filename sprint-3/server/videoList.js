@@ -27,6 +27,7 @@ router.post('/', (req, res) => {
     const video = req.body;
     const newVideo = { ...video, id: `${uuid().substr(0, 12)}`}
     videoData.push(newVideo);
+    mainVideoData.push(newVideo);
     res.json(newVideo);
 })
 

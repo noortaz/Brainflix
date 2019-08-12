@@ -17,11 +17,11 @@ class App extends React.Component {
   }
 
   accessTime = (timestamp) => {
-    let now = new Date(timestamp);
+    let commentTime = new Date(timestamp);
 
-    let newDate = now.getDate();
-    let newMonth = now.getMonth();
-    let newYear = now.getFullYear();
+    let newDate = commentTime.getDate();
+    let newMonth = commentTime.getMonth();
+    let newYear = commentTime.getFullYear();
 
     let newDay = newMonth + '/' + newDate + '/' + newYear;
     return newDay;
